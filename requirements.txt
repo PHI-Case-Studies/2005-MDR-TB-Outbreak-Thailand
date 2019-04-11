@@ -2,3 +2,4 @@ pandas
 folium
 xlrd
 matplotlib
+networkx
