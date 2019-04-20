@@ -4,7 +4,7 @@
 
 
 ## TLDR;
-This is a **digital case study** based on a research paper by John Oeltmann and built with [Jupyter Notebook](https://jupyter.org/). Click on the [![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/PHI-Case-Studies/2005-MDR-TB-Outbreak-Thailand/master) link above. Wait a few minutes for the binder to complete its setup and launch.
+This is a **digital case study** based on a research paper by John Oeltmann [1] and built with [Jupyter Notebook](https://jupyter.org/). Click on the [![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/PHI-Case-Studies/2005-MDR-TB-Outbreak-Thailand/master) link above. Wait a few minutes for the binder to complete its setup and launch.
 
 ## Learn More About
 1. [Project Jupyter](https://jupyter.org/)
@@ -12,3 +12,6 @@ This is a **digital case study** based on a research paper by John Oeltmann and 
 3. [Microsoft Azure Notebooks](https://notebooks.azure.com/) and [QuickStart Documentation](https://docs.microsoft.com/en-us/azure/notebooks/)
 
 **[Back to Digital Case Studies](https://github.com/PHI-Case-Studies)**
+
+## Reference
+1. Oeltmann, John E., et al. "Multidrug-resistant tuberculosis outbreak among US-bound Hmong refugees, Thailand, 2005." Emerging Infectious Diseases 14.11 (2008): 1715.
