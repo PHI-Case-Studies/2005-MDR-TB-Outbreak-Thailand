@@ -1,1 +1,1 @@
-jupyter trust NB00-MDR-TB-Case-Study-Prepare-Environment.ipynb
+conda install -y -c conda-forge folium=0.9.1 jinja2=2.10* pandas=0.24.2 geopandas=0.5* networkx=2.3*
