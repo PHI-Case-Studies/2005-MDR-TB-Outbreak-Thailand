@@ -4,7 +4,7 @@
 
 
 ## TLDR;
-This is a **digital case study** based on a research paper by John Oeltmann [1] and built with [Jupyter Notebook](https://jupyter.org/). Click on the either link above. Wait 5-15 minutes for the Binder or Microsoft Azure to complete its setup and launch.
+This is a **digital case study** based on a research paper by John Oeltmann [1] and built with [Jupyter Notebook](https://jupyter.org/). Click on either link above (Binder or Azure). Wait 5-15 minutes for the Binder or Microsoft Azure to complete its setup and launch.
 
 ## Learn More About
 1. [Project Jupyter](https://jupyter.org/)
