@@ -1,3 +1,3 @@
-conda install -y -c conda-forge folium=0.9.1 jinja2=2.10* pandas=0.24.2 geopandas=0.5* networkx=2.3*
+conda install -y -c conda-forge folium=0.9.1 jinja2=2.10* pandas=0.24.2 geopandas=0.5* networkx=2.3* missingno
 conda install -c plotly --yes plotly_express
 
