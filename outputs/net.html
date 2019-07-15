@@ -1,0 +1,124 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "black"}, "id": "TH-101579", "label": "TH-101579", "shape": "dot", "title": "TH-101579", "value": 4, "x": 100.82844, "y": 14.702731}, {"font": {"color": "black"}, "id": "TH-101823", "label": "TH-101823", "shape": "dot", "title": "TH-101823", "value": 4, "x": 100.828917, "y": 14.699857}, {"font": {"color": "black"}, "id": "TH-101783", "label": "TH-101783", "shape": "dot", "title": "TH-101783", "value": 1, "x": 100.828634, "y": 14.696434}, {"font": {"color": "black"}, "id": "TH-102445", "label": "TH-102445", "shape": "dot", "title": "TH-102445", "value": 1, "x": 100.82895, "y": 14.696133}, {"font": {"color": "black"}, "id": "TH-102460", "label": "TH-102460", "shape": "dot", "title": "TH-102460", "value": 1, "x": 100.827556, "y": 14.700809}, {"font": {"color": "black"}, "id": "TH-102637", "label": "TH-102637", "shape": "dot", "title": "TH-102637", "value": 1, "x": 100.829703, "y": 14.696637}, {"font": {"color": "black"}, "id": "TH-103347", "label": "TH-103347", "shape": "dot", "title": "TH-103347", "value": 3, "x": 100.830247, "y": 14.697342}, {"font": {"color": "black"}, "id": "TH-103009", "label": "TH-103009", "shape": "dot", "title": "TH-103009", "value": 1, "x": 100.831095, "y": 14.699261}, {"font": {"color": "black"}, "id": "TH-102909", "label": "TH-102909", "shape": "dot", "title": "TH-102909", "value": 1, "x": 100.830151, "y": 14.69898}, {"font": {"color": "black"}, "id": "TH-103773", "label": "TH-103773", "shape": "dot", "title": "TH-103773", "value": 1, "x": 100.82848, "y": 14.700229}, {"font": {"color": "black"}, "id": "TH-104039", "label": "TH-104039", "shape": "dot", "title": "TH-104039", "value": 1, "x": 100.829623, "y": 14.697903}, {"font": {"color": "black"}, "id": "TH-103927", "label": "TH-103927", "shape": "dot", "title": "TH-103927", "value": 2, "x": 100.829917, "y": 14.700072}]);
+        edges = new vis.DataSet([]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        // default to using dot shape for nodes
+        options.nodes = {
+            shape: "dot"
+        }
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
