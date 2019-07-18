@@ -9,6 +9,6 @@ conda install -y -c conda-forge folium=0.9.1 jinja2=2.10* xlrd networkx=2.3* mis
 conda install -c plotly --yes plotly_express
 
 pip install --upgrade pip
-pip install pandas==0.24.2 pyviz
+pip install pandas==0.24.2
 
 source /home/nbuser/anaconda3_420/bin/deactivate
