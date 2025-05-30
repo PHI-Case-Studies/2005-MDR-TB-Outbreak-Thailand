@@ -1,7 +1,5 @@
 # Digital Case Study: 2005-MDR-TB-Outbreak-Thailand
 
-This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy. Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.
-
 ## About this Digital Case Study
 
 [![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/PHI-Case-Studies/2005-MDR-TB-Outbreak-Thailand/master) [![Azure Notebooks](https://notebooks.azure.com/launch.png)](https://notebooks.azure.com/import/gh/PHI-Case-Studies/2005-MDR-TB-Outbreak-Thailand)
