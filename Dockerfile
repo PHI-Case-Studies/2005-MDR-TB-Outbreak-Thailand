@@ -11,7 +11,6 @@ COPY . .
 COPY ./aznbsetup.sh ./aznbsetup.sh
 RUN chmod +x ./aznbsetup.sh
 
-
 # Fix ownership
 RUN chown -R jovyan:users /home/jovyan
 
